@@ -7,7 +7,7 @@ const statusBar = document.getElementById('status-bar');
 const statuses = {
   online: "Online",
   idle: "Zaraz wracam",
-  dnd: "Nie przeszkadzać :)",
+  dnd: "Nie przeszkadzać",
   offline: "Offline",
 };
   statusBar.innerHTML = statuses[status];
