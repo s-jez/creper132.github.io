@@ -9,21 +9,25 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-color: rgb(30, 30, 30);
+    text-align: center;
     padding: 0;
+    margin: 0;
     font-family: 'Caskaydia Cove';
     color: white;
 }
 h1 {
     font-size: 36px;
 }
+h1:hover {
+    color: #ff4040;
+    transition: 500ms;
+    transform: scale(1.2);
+}
 .content {
     min-width: 10%;
     max-width: 50%;
     background-color: rgba(30, 30, 30, 0.50);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    text-align: center;
+    margin: 40px auto 0 auto;
     border: solid 5px;
     border-radius: 20px;
     border-color: rgb(30, 30, 30);
@@ -31,22 +35,25 @@ h1 {
 }
 .nav {
     min-width: 10%;
-    max-width: 50%;
+    max-width: 30%;
     background-color: rgba(30, 30, 30, 0.50);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
+    margin: 40px auto 0 auto;
     border: solid 5px;
+    height: 25px;
     border-radius: 20px;
     border-color: rgb(30, 30, 30);
     padding: 10px;
+
 }
 .nav a {
-    padding-left: 16px;
-    float: right;
+    display: inline-block;
+    padding-left: 19px;
+}
+.nav a:hover {
+    transform: scale(1.2);
 }
 .big {
-    font-size: 36px;
+    font-size: 26px;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -57,4 +64,12 @@ a, a:active {
 a:hover {
     color: #ff4040;
     transition: 500ms;
+}
+#status {
+    content: "";
+    height: 0.7rem;
+    width: 0.7rem;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 0.5rem;
 }

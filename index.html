@@ -10,20 +10,20 @@
     name="keywords"
     content="creper132, strona creper132, github creper132, chomikuj creper132, creper132_, youtube creper132, yt creper132, serwer minecraft"
     />
-    <meta property="og:image:url" content="./images/avatar.png" />
     <meta property="og:site_name" content="creper132.github.io" />
     <meta property="og:type" content="object" />
     <meta property="og:title" content="Strona Creper132" />
     <meta property="og:description" content="Strona główna" />
     <meta name="theme-color" content="#ff4040" />
     <meta name="description" content="Strona główna" />
-    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/xaronnn/js-lanyard/lanyard.js"></script>
     <script src="./js/count.js"></script>
-</head>
+    <script src="./js/discord-status.js"></script>
 <body>
     <header>
+        <h1>Creper132</h1>
         <div class="nav">
-            <span style="color: #ff4040; padding-left: 16px;">Crep</span><span>er132</span>
             <a href="https://discord.gg/X9JkcDycvZ" target="_blank">Discord</a>
             <a href="https://github.com/Creper132" target="_blank">Github</a>
             <a href="https://www.youtube.com/channel/UC3qbl57lJ-hNGpHGMBFCmaA">YouTube</a>
@@ -31,9 +31,16 @@
     </header>
     <main>
         <div class="content">
-            <span class="big">MOTD</span>
-            <p>Dodano counter na stronie który znajdziecie na dole :D</p>
-            <p>Niedługo strona będzie działać na urządzeniach typu telefon</p>
+            <span class="big">NEWS</span>
+            <p><strong>BIG UPDATE</strong></p>
+            <ul>
+                <li>Reset countera</li>
+                <li>Polepszono readme</li>
+                <li>Poleposzno kod</li>
+                <li>Zmieniono navbara</li>
+                <li>Poprawiono wsparcie urządzeń mobilnych typu telefon</li>
+                <li>Dodanie statusu discord do footera (Dzieki hexa)</li>
+            </ul>
         </div>
         <div class="content">
             <section>
@@ -46,7 +53,7 @@
             </section>
             <section>
                 <span class="big">KOLEKCJA TELEFONÓW</span>
-                <p>Samsung S20 FE 5G</p>
+                <p>Samsung S20 FE 5G (Main)</p>
                 <p>Samsung J5 2016</p>
                 <p>Samsung S GT-I9000</p>
                 <p>Nokia RM-944 (x2)</p>
@@ -54,22 +61,41 @@
                 <p>Nokia 3100</p>
                 <p>Lumia 635 1GB</p>
                 <p>Lumia 950XL</p>
-                <p>iPhone 4S (x2)</p>
+                <p>iPhone SE (iOS 14.4)</p>
+                <p>iPhone 4S (iOS 6.1.3)</p>
+                <p>iPhone 4S (iOS 9.3.6)</p>
                 <p>iPhone 4</p>
             </section>
         </div>
     </main>
     <footer>
         <div class="content">
-            <p>
-                Strona stworzona przez Creper132 z &hearts;
-                <br />
-                Strona jest na licencji <a href="https://opensource.org/licenses/MIT" target="_blank">MIT</a>!
-                <br />
-                Kod strony znajdziesz pod linkiem <a href="https://github.com/Creper132/creper132.github.io" target="_blank">https://github.com/Creper132/creper132.github.io</a>
-                <br>
-                <span id="visits">Ładowanie countera ile razy ktoś wszedł na strone!</span>
-            </p>
+            <section>
+                <p>
+                    Strona stworzona przez Creper132 z &hearts;
+                </p>
+                <p>
+                    Strona jest na licencji <a href="https://opensource.org/licenses/MIT" target="_blank">MIT</a>!
+                </p>
+                <p>
+                    Kod strony znajdziesz pod linkiem <a href="https://github.com/Creper132/creper132.github.io" target="_blank">https://github.com/Creper132/creper132.github.io</a>
+                </p>
+                <p>
+                    Status discord został stworzony dzięki pomocy <a href="https://discord.com/users/885893807235809280" target="_blank">hexa</a>!
+                </p>
+            </section>
+            <section>
+                <h2>Liczba odwiedzień strony</h2>
+                <span id="visits">
+                    Ładowanie countera ile razy ktoś wszedł na strone! Prosze czekać
+                </span>
+                <h2>
+                    Mój status discord
+                </h2>
+                <span id="status-bar">
+                    Ładowanie mojego statusu discord! Prosze czekać
+                </span>
+            </section>
         </div>
     </footer>
 </body>
