@@ -5,9 +5,9 @@ const { username, discriminator, avatar } = data.discord_user;
 const status = data.discord_status;
 const statusBar = document.getElementById('status-bar');
 const statuses = {
-  online: "Online",
+  online: "Online :)",
   idle: "Zaraz wracam",
-  dnd: "Nie przeszkadzać",
+  dnd: "Nie przeszkadzać :)",
   offline: "Offline",
 };
   statusBar.innerHTML = statuses[status];
