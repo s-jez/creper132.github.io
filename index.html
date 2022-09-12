@@ -18,18 +18,27 @@
     <meta name="description" content="Strona główna" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/xaronnn/js-lanyard/lanyard.js"></script>
-    <script src="./js/count.js"></script>
-    <script src="./js/discord-status.js"></script>
+    <script src="./js/count.js" defer></script> <!-- Atrybut defer umożliwa załadowanie skryptu JS'a po wykonaniu HTML'a-->
+    <script src="./js/discord-status.js" defer></script> <!-- Atrybut defer umożliwa załadowanie skryptu JS'a po wykonaniu HTML'a-->
 <body>
     <header>
-        <h1>Creper132</h1>
-        <div class="nav">
-            <a href="https://discord.gg/X9JkcDycvZ" target="_blank">Discord</a>
-            <a href="https://github.com/Creper132" target="_blank">Github</a>
-            <a href="https://www.youtube.com/channel/UC3qbl57lJ-hNGpHGMBFCmaA">YouTube</a>
-        </div>
+        <span>Creper132</s>
+        <nav> <!-- Semantic tags -->
+            <ul>
+                <li>
+                    <a href="https://discord.gg/X9JkcDycvZ" target="_blank">Discord</a>
+                </li>
+                <li>
+                    <a href="https://github.com/Creper132" target="_blank">Github</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UC3qbl57lJ-hNGpHGMBFCmaA">YouTube</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
+        <!-- Div można zamienić na znaczniki section / article , za dużo divów-->
         <div class="content">
             <span class="big">NEWS</span>
             <p><strong>BIG UPDATE</strong></p>
@@ -87,9 +96,9 @@
                 <span id="visits">
                     Ładowanie countera ile razy ktoś wszedł na strone! Prosze czekać.
                 </span>
-                <h2>
+                <h3>
                     Mój status discord
-                </h2>
+                </h3>
                 <span id="status-bar">
                     Ładowanie mojego statusu discord! Prosze czekać.
                 </span>
